@@ -1,0 +1,11 @@
+.orange-btn {
+    width: 126px;
+    height: 40px;
+    border: 0;
+    background-color: $orange_button;
+    border-radius: 2px;
+    color: $white;
+}
+.orange-btn:hover {
+    background-color: $orange_button_hover;
+}

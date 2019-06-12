@@ -1,0 +1,79 @@
+/*sidebar */
+.sidebar {
+  width: 190px;
+  height: 100%;
+  position: fixed;
+  background: $black_nav_background;
+  color: $white;
+}
+.main-nav {
+  height: 60px;
+  padding: 20px 20px;
+}
+.main-nav .hamburger {
+  padding-left: 40px;
+  vertical-align: super;
+  height: 83px;
+  color: $grey_nav_font;
+}
+.main-nav .hamburger i:hover {
+  color: $white;
+}
+ul.side-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid $black_nav_background_hover;
+}
+.side-nav li,
+a {
+  text-decoration: none;
+  width: 100%;
+  border-left: 3px solid $black_nav_background;
+  color: $grey_nav_font;
+  padding: 13px 0;
+  cursor: pointer;
+}
+
+.side-nav li:hover {
+  background: $black_nav_background_hover;
+  border-left: 3px solid $orange_button;
+  color: $white;
+}
+.side-nav li:hover a {
+  color: $white;
+}
+.side-nav .icon {
+  padding: 0 10px;
+}
+/* Avatar */
+.sidebar-avatar {
+  color: $grey_nav_font;
+  text-align: center;
+}
+.sidebar-avatar .avatar img {
+  width: 44px;
+  height: 44px;
+}
+.sidebar-avatar p {
+  text-transform: capitalize;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+.sidebar-avatar .avatar {
+  float: left;
+  margin-left: 20px;
+  margin-right: 11px;
+}
+.sidebar-avatar .active-avatar {
+  position: relative;
+  bottom: 50px;
+  left: 17px;
+  fill: $green_online;
+}
+.sidebar-avatar .avatar-name p{
+  line-height: 45px;
+  color: $blue_link;
+  margin-left: 11px;
+}

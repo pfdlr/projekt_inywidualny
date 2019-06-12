@@ -1,0 +1,41 @@
+/* Topbar     */
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+  height: 60px;
+  float: left;
+  background: $white;
+  width: 100%;
+  padding-left: 200px;
+  color: $grey_nav_font;
+  font-size: 16px;
+  text-align: center;
+}
+.topbar div {
+    height: 100%;
+    margin: 0 5px;
+    border-left: 1px solid $grey_nav_font;
+    line-height: 60px;
+    padding-left: 5px;
+
+}
+.topbar .wallet {
+    width: 190px;
+}
+.icon-top {
+    width: 60px;
+}
+.active-notification {
+    position: relative;
+    bottom: 70px;
+    left: 3px;
+    fill: $orange_button;
+    z-index: 1000;
+    border-left: 0 !important;
+  }
+  .profile__username {
+      color: $blue_link;
+  }

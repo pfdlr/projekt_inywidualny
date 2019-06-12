@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-family: $font;
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+ body {
+     background: $grey_tab;
+ }
+.container {
+  max-width: 1200px;
+  width: 100%;
+}

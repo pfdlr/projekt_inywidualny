@@ -1,0 +1,21 @@
+/* Content */
+.content {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: $grey_tab;
+  padding-left: 200px;
+  border-radius: 4px;
+}
+.content .general {
+    background: $white;
+    margin: 10px 0 10px 0;
+
+
+}
+.content .general .article-title {
+    height: 47px;
+    line-height: 47px;
+    padding-left: 10px;
+    border-bottom: 1px solid $grey_nav_font;
+}

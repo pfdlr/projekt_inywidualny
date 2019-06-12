@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphter.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+<!-- Sidebar-->        
+        <nav class="sidebar">
+            <div class="main-nav"><img class="logo" src="images/logo.png" alt="logo"><span class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </span></div>
+            <ul class="side-nav">
+                <li><a href="#general"><span class="icon icon-general"></span>General</a></li>
+                <li><a href="#details"><span class="icon icon-details"></span>Details</a></li>
+                <li><a href="#links"><span class="icon icon-links"></span>Links</a></li>
+                <li><a href="#banners"><span class="icon icon-banners"></span>Banners</a></li>
+                <li><a href="#personal"><span class="icon icon-personaldata"></span>Personal data</a></li>
+                <li><a href="#payout"><span class="icon icon-payout"></span>Payout</a></li>
+                <li><a href="#postback"><span class="icon icon-postback"></span>Postback</a></li>
+            </ul>
+    <!--Avatar-->        
+            <div class="sidebar-avatar">
+                <p>Your manager<p>
+                    <div class="avatar"><img src="images/avatar.png" alt="avatar">
+                        <div class="active-avatar">
+                            <svg width="12" height="12">
+                                <circle cx="6" cy="6" r="6"/>
+                              </svg>
+                        </div>
+                     </div>
+                     <div class="avatar-name"><p>Mikhael E.</p></div>
+            </div>
+        </nav>
+<!--Topbar-->        
+        <header>
+            <div class="topbar">
+                <div class="wallet"><span class="topbar__icon icon-wallet"></span>
+                    <span class="cash">$1,500.00</span>
+                    <span class="topbar__icon icon-arrow-down-small"></span>
+                </div>
+                <div class="icon-top"><span class="topbar__icon icon-notification"></span>
+                    <div class="active-notification">
+                        <svg width="8" height="8">
+                            <circle cx="4" cy="4" r="4"/>
+                      </svg>
+                    </div>
+                </div>
+                <div class="icon-top"><span class="topbar__icon icon-profile"></span></div>
+                <div><span class="profile__username">Leonardo Dicaprio</span></div>
+                <div class="icon-top"><span class="topbar__icon icon-quit"></span></div>
+            </div>
+        </header>
+<!--Content-->
+        <section class="content">
+            <article class="general">
+                <div class="article-title">General statistick</div>
+                <div class="date-range">Data</div>
+                <div class="general-content"></div>
+            </article>
+            <article class="links"></article>
+                <div class="article-title">Links</div>
+                <div class="links-table"></div>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -5,17 +5,30 @@
   float: left;
   background: $grey_tab;
   padding-left: 200px;
-  border-radius: 4px;
+  
 }
-.content .general {
+.content .general, .links {
     background: $white;
     margin: 10px 0 10px 0;
-
+    @include border-radius(5px);
+    @include shadow(0, 0, 10px, $grey_font);
 
 }
-.content .general .article-title {
-    height: 47px;
+.content .article-title  {
+  text-transform: uppercase;
+  color: $grey_font;  
+  height: 47px;
+  line-height: 47px;
+  padding-left: 10px;
+  border-bottom: 1px solid $grey_nav_font;
+}
+
+.content .general .date {
+  height: 47px;
     line-height: 47px;
     padding-left: 10px;
-    border-bottom: 1px solid $grey_nav_font;
+  border-bottom: 1px solid $grey_nav_font;
+}
+.content .general .general-content {
+  height: 640px;
 }

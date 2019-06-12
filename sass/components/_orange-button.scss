@@ -3,7 +3,7 @@
     height: 40px;
     border: 0;
     background-color: $orange_button;
-    border-radius: 2px;
+    @include border-radius(2px);
     color: $white;
 }
 .orange-btn:hover {

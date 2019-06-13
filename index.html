@@ -12,8 +12,8 @@
 </head>
 <body>
     <div class="container">
-<!-- Sidebar-->        
-        <nav class="sidebar">
+        <!-- Sidebar-->        
+        <div class="col-1 sidebar">
             <div class="main-nav"><img class="logo" src="images/logo.png" alt="logo"><span class="hamburger">
                     <i class="fas fa-bars"></i>
                 </span></div>
@@ -26,7 +26,7 @@
                 <li><a href="#payout"><span class="icon icon-payout"></span>Payout</a></li>
                 <li><a href="#postback"><span class="icon icon-postback"></span>Postback</a></li>
             </ul>
-    <!--Avatar-->        
+            <!--Avatar-->        
             <div class="sidebar-avatar">
                 <p>Your manager<p>
                     <div class="avatar"><img src="images/avatar.png" alt="avatar">
@@ -38,8 +38,10 @@
                      </div>
                      <div class="avatar-name"><p>Mikhael E.</p></div>
             </div>
-        </nav>
-<!--Topbar-->        
+        </div>
+    <!--Wrapper-->        
+    <div class="col-2 wrapper">
+        <!--Topbar-->        
         <header>
             <div class="topbar">
                 <div class="wallet"><span class="topbar__icon icon-wallet"></span>
@@ -58,15 +60,36 @@
                 <div class="icon-top"><span class="topbar__icon icon-quit"></span></div>
             </div>
         </header>
-<!--Content-->
+        <!--Content sekcja-->
         <section class="content">
             <article class="general">
                 <div class="article-title">General statistick</div>
                 <div class="date">
-                    <div class="date-range"></div>
+                    <div class="date-range">
+                        <form action="" method="">
+                            <input type="date" name="start-date" value=""/>
+                            <input type="date" name="end-date" class="end-date" value=""/><span class="icon icon-calendar"></span>
+                        </form>
+                    </div>
+                    <div class="refresh">
+                        <button class="refresh-button icon-refresh"></button>
+                    </div>
                 </div>
-                <div class="general-content"></div>
+                <div class="general-content">
+                    <div class="wraper-general-stats">
+                        <div class="general-stats"></div>
+                        <div class="general-stats"></div>
+                    </div>
+                    <div class="general-subtitle"></div>
+                    <div class="general-">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="general-chart"><img src="images/chart.png" alt="chart"></div>
+                </div>
             </article>
+            <!--
             <article class="links">
                 <div class="article-title">Links</div>
                 <div class="links-table">
@@ -136,8 +159,9 @@
                         </table>
                 </div>
             </article>
+            -->
         </section>
     </div>
-
+</div>
 </body>
 </html>

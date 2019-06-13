@@ -9,6 +9,13 @@
 @mixin shadow($top, $left, $blur, $color) {
   box-shadow: $top $left $blur $color;
 }
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;

@@ -8,6 +8,18 @@
      background: $grey_tab;
  }
 .container {
-  max-width: 1200px;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+ 
 }
+.col-1 {
+  flex-grow: 1;
+}
+.col-2 {
+  flex-grow: 11;
+  overflow: auto;
+  
+}
+

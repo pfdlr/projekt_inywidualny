@@ -11,18 +11,7 @@
 @import "sections/topbar";
 @import "sections/content";
 
-
 /* Pages / Views *
 @import "pages/registration";
 */
-.links-table {
-    
-    width: 80%;
-    border-collapse: collapse;
-}
-td {
-    color: $grey_font;
-    border-bottom: 1px solid $grey_font;
-    height: 58px;
-  }
-  
+

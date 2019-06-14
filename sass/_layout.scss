@@ -3,23 +3,10 @@
   font-family: $font;
   max-width: 1200px;
   margin: 0 auto;
- }
- body {
-     background: $grey_tab;
- }
+}
+body {
+  background: $grey_tab;
+}
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
- 
+  width: 100%;
 }
-.col-1 {
-  flex-grow: 1;
-}
-.col-2 {
-  flex-grow: 11;
-  overflow: auto;
-  
-}
-

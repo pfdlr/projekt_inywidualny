@@ -1,10 +1,38 @@
 /* Topbar     */
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  border-bottom: 1px solid $black_nav_background;
+}
+.flex-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.main-nav {
+  height: 60px;
+  width: 188px;
+  padding: 20px 20px;
+  background: $black_nav_background;
+  color: $white;
+  position: absolute;
+}
+.main-nav .hamburger {
+  padding-left: 40px;
+  vertical-align: super;
+  height: 83px;
+  color: $grey_nav_font;
+}
+.main-nav .hamburger i:hover {
+  color: $white;
+}
 .topbar {
- display: flex;
- justify-content: flex-end;
- align-content: center;
- align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
   height: 60px;
   width: 100%;
   background: $white;
@@ -14,28 +42,28 @@
   font-size: 16px;
   text-align: center;
 }
-.topbar div {
-    height: 100%;
-    margin: 0 5px;
-    border-left: 1px solid $grey_nav_font;
-    line-height: 60px;
-    padding-left: 5px;
 
+.topbar div {
+  height: 100%;
+  margin: 0 5px;
+  border-left: 1px solid $grey_nav_font;
+  line-height: 60px;
+  padding-left: 5px;
 }
 .topbar .wallet {
-    width: 190px;
+  width: 190px;
 }
 .icon-top {
-    width: 60px;
+  width: 60px;
 }
 .active-notification {
-    position: relative;
-    bottom: 70px;
-    left: 3px;
-    fill: $orange_button;
-    z-index: 1000;
-    border-left: 0 !important;
-  }
-  .profile__username {
-      color: $blue_link;
-  }
+  position: relative;
+  bottom: 70px;
+  left: 3px;
+  fill: $orange_button;
+  z-index: 1000;
+  border-left: 0 !important;
+}
+.profile__username {
+  color: $blue_link;
+}

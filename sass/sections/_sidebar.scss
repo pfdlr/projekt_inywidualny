@@ -2,47 +2,41 @@
 .sidebar {
   height: 100%;
   width: 188px;
- 
+  z-index: 5;
   background: $black_nav_background;
   color: $white;
+  top: 60px;
+  float: left;
+  position: fixed;
 }
-.main-nav {
-  height: 60px;
-  padding: 20px 20px;
-}
-.main-nav .hamburger {
-  padding-left: 40px;
-  vertical-align: super;
-  height: 83px;
-  color: $grey_nav_font;
-}
-.main-nav .hamburger i:hover {
-  color: $white;
-}
+
 ul.side-nav {
   list-style-type: none;
   margin: 0;
   padding: 0 0 10px 0;
   border-bottom: 2px solid $black_nav_background_hover;
 }
-.side-nav li,
-a {
+.side-nav li a {
   text-decoration: none;
   width: 100%;
   border-left: 3px solid $black_nav_background;
   color: $grey_nav_font;
   padding: 13px 0;
   cursor: pointer;
+  display: block;
+  &:hover {
+    background: $black_nav_background_hover;
+    border-left: 3px solid $orange_button;
+    color: $white;
+    &:focus {
+      background: $orange_button;
+    }
+    &:active {
+      background: $orange_button;
+    }
+  }
 }
 
-.side-nav li:hover {
-  background: $black_nav_background_hover;
-  border-left: 3px solid $orange_button;
-  color: $white;
-}
-.side-nav li:hover a {
-  color: $white;
-}
 .side-nav .icon {
   padding: 0 10px;
 }
@@ -72,7 +66,7 @@ a {
   left: 17px;
   fill: $green_online;
 }
-.sidebar-avatar .avatar-name p{
+.sidebar-avatar .avatar-name p {
   line-height: 45px;
   color: $blue_link;
   margin-left: 11px;

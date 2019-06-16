@@ -1,10 +1,10 @@
 @mixin clearfix() {
-        &::before,
-        &::after {
-               content:"";
-               display: table ;
-               clear: both;
-}
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 @mixin shadow($top, $left, $blur, $color) {
   box-shadow: $top $left $blur $color;
@@ -18,37 +18,41 @@
 }
 
 @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 @mixin absolute-center() {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @mixin v-center() {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
 }
-@mixin opacity-color($color, $opacity){
-    background-color: rgba($color, $opacity);
+@mixin opacity-color($color, $opacity) {
+  background-color: rgba($color, $opacity);
 }
- @mixin all-width() {
-        [class*="col-"] {
-        width: 100%;
-        padding: 2px;
-        float:left;
-        }
+@mixin all-width() {
+  [class*="col-"] {
+    width: 100%;
+    padding: 2px;
+    float: left;
+  }
 }
 //* breke points */
 @mixin small {
-  @media (max-width: 767px) { @content; }
+  @media (max-width: 767px) {
+    @content;
+  }
 }
 
 @mixin medium {
-  @media(min-width: 768px) and (max-width: 991px){ @content; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
 }

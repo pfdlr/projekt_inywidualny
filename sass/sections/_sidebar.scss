@@ -1,3 +1,22 @@
+.main-nav {
+  height: 60px;
+  width: 188px;
+  padding: 20px 20px;
+  background: $black_nav_background;
+  color: $white;
+  position: absolute;
+  z-index: 6;
+  position: fixed;
+}
+.main-nav .hamburger {
+  padding-left: 40px;
+  vertical-align: super;
+  height: 83px;
+  color: $grey_nav_font;
+}
+.main-nav .hamburger i:hover {
+  color: $white;
+}
 /*sidebar */
 .sidebar {
   height: 100%;
@@ -5,16 +24,22 @@
   z-index: 5;
   background: $black_nav_background;
   color: $white;
-  top: 60px;
   float: left;
   position: fixed;
+  @include small {
+  }
 }
 
 ul.side-nav {
   list-style-type: none;
-  margin: 0;
+  margin: 60px 0;
   padding: 0 0 10px 0;
   border-bottom: 2px solid $black_nav_background_hover;
+}
+.showmenu {
+  @include small {
+    display: none;
+  }
 }
 .side-nav li a {
   text-decoration: none;
@@ -44,6 +69,8 @@ ul.side-nav {
 .sidebar-avatar {
   color: $grey_nav_font;
   text-align: center;
+  border-bottom: 2px solid $black_nav_background_hover;
+  padding-bottom: 13px;
 }
 .sidebar-avatar .avatar img {
   width: 44px;
@@ -70,4 +97,28 @@ ul.side-nav {
   line-height: 45px;
   color: $blue_link;
   margin-left: 11px;
+}
+.header-in-sidebar {
+  display: none;
+  @include small {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.header-in-sidebar > div {
+  @include small {
+    padding: 8px 0 0 0;
+  }
+}
+.topbar__icon {
+  @include small {
+    padding: 0 18px;
+  }
+}
+.header-in-sidebar .active-notification {
+  @include small {
+    bottom: 28px;
+    left: 27px;
+  }
 }

@@ -13,13 +13,8 @@
     
       <!--Topbar-->
       <header>
-        <div class="flex-header">
-          <div class="main-nav">
-              <img class="logo" src="images/logo.png" alt="logo" /><span class="hamburger">
-                <i class="fas fa-bars"></i>
-              </span>
-            </div>
-        <div class="topbar">
+        <div class="header">
+          <div class="topbar">
           <div class="wallet">
             <span class="topbar__icon icon-wallet"></span>
             <span class="cash">$1,500.00</span>
@@ -44,8 +39,12 @@
       </div>
     </header>
       <!-- Sidebar-->
-      <div class="sidebar">
-        
+      <div class="main-nav">
+        <img class="logo" src="images/logo.png" alt="logo" /><span class="hamburger">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
+      <div class="sidebar showmenu">
         <ul class="side-nav">
           <li>
             <a href="index.html"><span class="icon icon-general"></span>General</a>
@@ -82,6 +81,30 @@
             </div>
           </div>
           <div class="avatar-name"><p>Mikhael E.</p></div>
+        </div>
+        <!--Header in Sidebar-->
+        <div class="header-in-sidebar">
+          
+          <div class="wallet">
+            <span class="topbar__icon icon-wallet"></span>
+            <span class="cash">$1,500.00</span>
+            <span class="topbar__icon icon-arrow-down-small"></span>
+          </div>
+          <div class="icon-top">
+            <span class="topbar__icon icon-notification"></span>
+            <div class="active-notification">
+              <svg width="8" height="8">
+                <circle cx="4" cy="4" r="4" />
+              </svg>
+            </div>
+          </div>
+          <div class="icon-top">
+            <span class="topbar__icon icon-profile"></span>
+          </div>
+          <div><span class="profile__username">Leonardo Dicaprio</span></div>
+          <div class="icon-top">
+            <span class="topbar__icon icon-quit"></span>
+          </div>
         </div>
       </div>
       
@@ -215,5 +238,6 @@
         </section>
       </div>
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

@@ -5,28 +5,14 @@ header {
   width: 100%;
   z-index: 4;
   border-bottom: 1px solid $black_nav_background;
+  @include small {
+    display: none;
+  }
 }
-.flex-header {
+.header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-}
-.main-nav {
-  height: 60px;
-  width: 188px;
-  padding: 20px 20px;
-  background: $black_nav_background;
-  color: $white;
-  position: absolute;
-}
-.main-nav .hamburger {
-  padding-left: 40px;
-  vertical-align: super;
-  height: 83px;
-  color: $grey_nav_font;
-}
-.main-nav .hamburger i:hover {
-  color: $white;
 }
 .topbar {
   display: flex;

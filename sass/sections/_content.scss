@@ -1,4 +1,15 @@
 /* Content */
+.placeholder {
+  display: none;
+  @include small {
+    height: 60px;
+    width: 100%;
+    background-color: $black_nav_background;
+    display: block;
+    position: fixed;
+    z-index: 5;
+  }
+}
 .content-wrapper {
   position: relative;
   top: 60px;
@@ -8,7 +19,7 @@
   @include small {
     left: 0;
     width: 100%;
-    top: 0;
+    top: 60px;
   }
 }
 .content {
@@ -36,7 +47,7 @@ article {
   padding-left: 10px;
   border-bottom: 1px solid $grey_nav_font;
   @include small {
-    text-align: right;
+    text-align: center;
     padding-right: 25px;
   }
 }
@@ -63,16 +74,36 @@ article {
     padding: 3px;
   }
 }
+.date-range form {
+  @include small {
+    display: flex;
+    flex-direction: column;
+  }
+}
 input[type="date"] {
   width: 120px;
   height: 30px;
   border: 0;
+  @include small {
+    width: 175px;
+    border-bottom: 1px solid $grey_font; 
+    text-align: center;
+  }
 }
 input[class="end-date"] {
   background-size: 10%;
   border-left: 1px solid $grey_font;
   width: 175px;
   padding-left: 17px;
+  @include small {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+span.icon.icon-calendar {
+  @include small {
+    margin-top: 5px;
+  }
 }
 .refresh {
   margin-left: 3px;
@@ -139,6 +170,10 @@ input[class="end-date"] {
 .general-subtitle {
   height: 50px;
   margin: 0 0 0 180px;
+  @include small {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
 }
 
 /* ARTICLE LINKI */
@@ -153,6 +188,9 @@ input[class="end-date"] {
   position: relative;
   width: 80%;
   border-collapse: collapse;
+  @include small {
+    font-size: 13px;
+  }
 }
 table.links-table tbody tr td:nth-child(2) {
   color: $blue_link;
@@ -179,6 +217,10 @@ table.links-table tbody tr:hover .icon-trash {
 .icon-links,
 .icon-trash {
   cursor: pointer;
+  @include small {
+    padding: 0px 7px;
+    font-size: 20px;
+  }
 }
 .add-btn {
   height: 90px;

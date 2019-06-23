@@ -11,11 +11,10 @@
     <title>Dashboard</title>
   </head>
   <body>
-    
-      <!--Topbar-->
-      <header>
-        <div class="header">
-          <div class="topbar">
+    <!--Topbar-->
+    <header>
+      <div class="header">
+        <div class="topbar">
           <div class="wallet">
             <span class="topbar__icon icon-wallet"></span>
             <span class="cash">$1,500.00</span>
@@ -39,59 +38,59 @@
         </div>
       </div>
     </header>
-      <!-- Sidebar-->
-      <div class="main-nav">
-        <img class="logo" src="images/logo.png" alt="logo" /><span class="hamburger">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-      <div class="sidebar showmenu">
-        <ul class="side-nav">
-          <li>
-            <a href="#general"><span class="icon icon-general"></span>General</a>
-          </li>
-          <li>
-            <a href="#details"><span class="icon icon-details"></span>Details</a>
-          </li>
-          <li>
-            <a href="#links"><span class="icon icon-links"></span>Links</a>
-          </li>
-          <li>
-            <a href="#banners"><span class="icon icon-banners"></span>Banners</a>
-          </li>
-          <li>
-            <a href="#personal"><span class="icon icon-personaldata"></span>Personal data</a>
-          </li>
-          <li>
-            <a href="#payout"><span class="icon icon-payout"></span>Payout</a>
-          </li>
-          <li>
-            <a href="#postback"><span class="icon icon-postback"></span>Postback</a>
-          </li>
-        </ul>
-        <!--Avatar-->
-        <div class="sidebar-avatar">
-          <p>Your manager</p>
-          <p></p>
-          <div class="avatar">
-            <img src="images/avatar.png" alt="avatar" />
-            <div class="active-avatar">
-              <svg width="12" height="12">
-                <circle cx="6" cy="6" r="6" />
-              </svg>
-            </div>
+    <!-- Sidebar-->
+    <div class="main-nav">
+      <img class="logo" src="images/logo.png" alt="logo" /><span class="hamburger">
+        <i class="fas fa-bars"></i>
+      </span>
+    </div>
+    <div class="sidebar hidemenu">
+      <ul class="side-nav" id="menu-sidebar">
+        <li>
+          <a href="#general"><span class="icon icon-general"></span>General</a>
+        </li>
+        <li>
+          <a href="#details"><span class="icon icon-details"></span>Details</a>
+        </li>
+        <li>
+          <a href="#links"><span class="icon icon-links"></span>Links</a>
+        </li>
+        <li>
+          <a href="#banners" id="banners"><span class="icon icon-banners"></span>Banners</a>
+        </li>
+        <li>
+          <a href="#personal"><span class="icon icon-personaldata"></span>Personal data</a>
+        </li>
+        <li>
+          <a href="#payout"><span class="icon icon-payout"></span>Payout</a>
+        </li>
+        <li>
+          <a href="#postback"><span class="icon icon-postback"></span>Postback</a>
+        </li>
+      </ul>
+      <!--Avatar-->
+      <div class="sidebar-avatar">
+        <p>Your manager</p>
+        <p></p>
+        <div class="avatar">
+          <img src="images/avatar.png" alt="avatar" />
+          <div class="active-avatar">
+            <svg width="12" height="12">
+              <circle cx="6" cy="6" r="6" />
+            </svg>
           </div>
-          <div class="avatar-name"><p>Mikhael E.</p></div>
         </div>
-        <!--Header in Sidebar-->
-        <div class="header-in-sidebar">
-          
-          <div class="wallet">
-            <span class="topbar__icon icon-wallet"></span>
-            <span class="cash">$1,500.00</span>
-            <span class="topbar__icon icon-arrow-down-small"></span>
-          </div>
-          <div class="icon-top">
+        <div class="avatar-name"><p>Mikhael E.</p></div>
+      </div>
+      <!--Header in Sidebar-->
+      <div class="header-in-sidebar">
+        <div class="top-in-sidebar">
+          <span class="topbar__icon icon-wallet"></span>
+          <span class="cash">$1,500.00</span>
+          <span class="topbar__icon icon-arrow-down-small"></span>
+        </div>
+        <div class="top-in-sidebar-warp">
+          <div class="top-in-sidebar">
             <span class="topbar__icon icon-notification"></span>
             <div class="active-notification">
               <svg width="8" height="8">
@@ -99,146 +98,189 @@
               </svg>
             </div>
           </div>
-          <div class="icon-top">
+          <div class="top-in-sidebar">
             <span class="topbar__icon icon-profile"></span>
           </div>
-          <div><span class="profile__username">Leonardo Dicaprio</span></div>
-          <div class="icon-top">
-            <span class="topbar__icon icon-quit"></span>
-          </div>
+        </div>
+        <div class="top-in-sidebar"><span class="profile__username">Leonardo Dicaprio</span></div>
+        <div class="top-in-sidebar">
+          <span class="topbar__icon icon-quit"></span>
         </div>
       </div>
-      
-      <!--Wrapper-->
-      <div class="placeholder"></div>
-      <div class="content-wrapper">
-        
-        <!--Content sekcja-->
-        <section class="content">
-          <!-- General -->
-          <article class="general" id="general">
-            <div class="article-title">General statistick</div>
-            <div class="date">
-              <div class="date-range">
-                <form action="send" method="GET">
-                  <input type="date" name="start-date" value="" />
-                  <input type="date" name="end-date" class="end-date" value="" /><span
-                    class="icon icon-calendar"
-                  ></span>
-                </form>
-              </div>
-              <div class="refresh">
-                <button class="refresh-button icon-refresh"></button>
-              </div>
+    </div>
+
+    <!--Wrapper-->
+    <div class="placeholder"></div>
+    <div class="content-wrapper">
+      <!--Content sekcja-->
+      <section class="content">
+        <!-- General -->
+        <article class="general" id="general">
+          <div class="article-title">General statistick</div>
+          <div class="date">
+            <div class="date-range">
+              <form action="send" method="GET">
+                <input type="date" name="start-date" value="" />
+                <input type="date" name="end-date" class="end-date" value="" /><span class="icon icon-calendar"></span>
+              </form>
             </div>
-            <div class="general-content">
-              <div class="general-stats">
-                  <div class="divTable">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell">Visit Signups</div>
-                          <div class="divTableCell">124</div>
-                        </div>
-                        <div class="divTableRow">
-                          <div class="divTableCell">FTD</div>
-                          <div class="divTableCell">445</div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="divTable">
-                      <div class="divTableBody">
-                        <div class="divTableRow">
-                          <div class="divTableCell">Visit Signups</div>
-                          <div class="divTableCell">124</div>
-                        </div>
-                        <div class="divTableRow">
-                          <div class="divTableCell">FTD</div>
-                          <div class="divTableCell">445</div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="general-subtitle"><p>Earnigs chart</p></div>
-              <div class="general-chart"><img src="images/chart.png" alt="chart" /></div>
+            <div class="refresh">
+              <button class="refresh-button icon-refresh"></button>
             </div>
-          </article>
-          <!--LINKS-->
-          <article class="links" id="links">
-                <div class="article-title">Links</div>
-                <div class="links-table-wrapper">
-                  <div class="add-btn"><button class="orange-btn">+ add new</button></div>
-                  <div class="table-wrapper">
-                    <table class="links-table" >
-                        <tbody>
-                        <tr>
-                        <td>Home page</td>
-                        <td>http://www.homepage.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Currentlu offer</td>
-                        <td>http://www.currently.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Blurpix</td>
-                        <td>http://www.blurpix.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Your Site</td>
-                        <td>http://www.mysite.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Google</td>
-                        <td>http://www.google.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Facebook</td>
-                        <td>http://www.facebook.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Dashboard</td>
-                        <td>http://www.dashboard.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Blurax</td>
-                        <td>http://www.blurax.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Piece of Wine</td>
-                        <td>http://www.pieceofwine.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        <tr>
-                        <td>Twitter</td>
-                        <td>http://www.twitter.com</td>
-                        <td><span class="icon icon-links"></span></td>
-                        <td><span class="icon icon-trash"></span></td>
-                        </tr>
-                        </tbody>
-                        </table>
-                  </div>  
-                  <div class="add-btn"><button class="orange-btn">+ add new</button></div>
+          </div>
+          <div class="general-content">
+            <div class="general-stats">
+              <div class="divTable">
+                <div class="divTableBody">
+                  <div class="divTableRow">
+                    <div class="divTableCell">Visit Signups</div>
+                    <div class="divTableCell">124</div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">FTD</div>
+                    <div class="divTableCell">445</div>
+                  </div>
                 </div>
-            </article>
-            
-        </section>
+              </div>
+              <div class="divTable">
+                <div class="divTableBody">
+                  <div class="divTableRow">
+                    <div class="divTableCell">Visit Signups</div>
+                    <div class="divTableCell">124</div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">FTD</div>
+                    <div class="divTableCell">445</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="general-subtitle"><p>Earnigs chart</p></div>
+            <div class="general-chart"><img src="images/chart.png" alt="chart" /></div>
+          </div>
+        </article>
+        <!--LINKS-->
+        <article class="links" id="links">
+          <div class="article-title">Links</div>
+          <div class="links-table-wrapper">
+            <div class="add-btn"><button class="orange-btn">+ add new</button></div>
+            <div class="table-wrapper">
+              <table class="links-table">
+                <tbody>
+                  <tr>
+                    <td>Home page</td>
+                    <td>http://www.homepage.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Currentlu offer</td>
+                    <td>http://www.currently.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Blurpix</td>
+                    <td>http://www.blurpix.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Your Site</td>
+                    <td>http://www.mysite.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Google</td>
+                    <td>http://www.google.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Facebook</td>
+                    <td>http://www.facebook.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Dashboard</td>
+                    <td>http://www.dashboard.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Blurax</td>
+                    <td>http://www.blurax.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Piece of Wine</td>
+                    <td>http://www.pieceofwine.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Twitter</td>
+                    <td>http://www.twitter.com</td>
+                    <td><span class="icon icon-links"></span></td>
+                    <td><span class="icon icon-trash"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="add-btn"><button class="orange-btn">+ add new</button></div>
+          </div>
+        </article>
+        <article class="personal-data" id="personal">
+          <div class="article-title">Personal data</div>
+          <div class="personal-data-wrapper">
+            <form class="personal-form" action="send" method="GET">
+              <div class="personal-name">
+                <div><label for="name">Name</label><input type="text" name="name" id="name" value="Leonardo" /></div>
+                <div><label for="surname">Surname</label><input type="text" name="surname" value="Dicaprio" /></div>
+                <div><label for="email">E-mail</label><input type="email" name="email" value="leonardo@gmail.com" /></div>
+                <div><label for="phone">Phone number</label><input type="tel" name="phone" value="+12 987 987 987" /></div>
+              </div>
+              <div class="personal-comunicator">
+                <div><label for="skype">Skype</label><input type="text" name="skype" /></div>
+                <div><label for="icq">ICQ</label><input type="text" name="icq" /></div>
+                <div><label for="msn">MSN</label><input type="text" name="msn" /></div>
+              </div>
+              <div class="personal-wallet">
+                <div><label for="wallet">Wallet</label><input type="text" name="wallet" /></div>
+              </div>
+              <div class="personal-pass">
+                <div><label for="pass">Password</label><input type="password" name="pass" /></div>
+                <div><label for="retype-pass">Repeat</label><input type="password" name="retype-pass" /></div>
+              </div>
+            </form>
+            <div class="add-btn"><button class="orange-btn">Save</button></div>
+          </div>
+        </article>
+      </section>
+      <!-- MODAL-->
+      <div class="overlay" id="overlay">
+        <div class="modal" id="bannersModal">
+          <div class="modal-title">
+            <div class="article-title">ADD Banners</div>
+            <div class="btn-close js--close-modal icon icon-close"></div>
+          </div>
+          <div class="selects-1">
+            <div class="scheme"><label for="scheme-input">Scheme name</label><input type="text" name="scheme-input" value="Name" /></div>
+            <div class="compain"><label for="compain-input">Compain</label><input type="text" name="compain-input" value="Select" /></div>
+            <div class="lang"><label for="lang-input">Language</label><input type="text" name="lang-input" /></div>
+          </div>
+          <div class="selects-2">
+            <div class="w-h"><label for="w-h-input">Width-Height</label><input type="text" name="w-h-input" /></div>
+            <div class="design"><label for="design-input">Design</label><input type="text" name="design-input" /></div>
+            <div class="file"><label for="file-input">File name</label><input type="text" name="file-input" /></div>
+          </div>
+          <button class="orange-btn js--close-modal">Okay</button>
+        </div>
       </div>
-   <script type="text/javascript" src="js/script.js"></script>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

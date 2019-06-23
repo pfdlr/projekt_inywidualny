@@ -61,3 +61,8 @@
     @content;
   }
 }
+@mixin largephones {
+  @media (min-height: 641px) {
+    @content;
+  }
+}

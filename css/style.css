@@ -371,6 +371,102 @@ body {
   background-color: #ffa200;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  color: #a6a6a6;
+  position: relative;
+  padding: 30px;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.modal .btn-close:hover {
+  color: #333333;
+}
+
+.modal-title .article-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.selects-1,
+.selects-2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.selects-2 {
+  margin-top: 0;
+}
+
+.selects-1 div,
+.selects-2 div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+[class*="selects-"] label,
+[class*="selects-"] input {
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+  color: #a6a6a6;
+}
+
+[class*="selects-"] label:focus,
+[class*="selects-"] input:focus {
+  color: #333333;
+}
+
+[class*="selects-"] label {
+  font-weight: bold;
+}
+
 /* Sections */
 .main-nav {
   height: 60px;
@@ -419,7 +515,7 @@ ul.side-nav {
 }
 
 @media (max-width: 767px) {
-  .showmenu {
+  .hidemenu {
     display: none;
   }
 }
@@ -432,6 +528,12 @@ ul.side-nav {
   padding: 13px 0;
   cursor: pointer;
   display: block;
+}
+
+@media (max-width: 767px) {
+  .side-nav li a {
+    padding: 12px 0;
+  }
 }
 
 @media (max-height: 568px) {
@@ -451,6 +553,10 @@ ul.side-nav {
 }
 
 .side-nav li a:hover:active {
+  background: #f58220;
+}
+
+.active {
   background: #f58220;
 }
 
@@ -518,9 +624,21 @@ ul.side-nav {
 }
 
 @media (max-width: 767px) {
-  .header-in-sidebar > div {
-    padding: 8px 0 0 0;
+  .top-in-sidebar {
+    padding: 19px 0;
     height: 25px;
+  }
+}
+
+@media (max-height: 568px) {
+  .top-in-sidebar {
+    padding: 15px 0;
+  }
+}
+
+@media (min-height: 641px) {
+  .top-in-sidebar {
+    padding: 30px 0;
   }
 }
 
@@ -534,6 +652,21 @@ ul.side-nav {
   .header-in-sidebar .active-notification {
     bottom: 28px;
     left: 27px;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-in-sidebar-warp {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
+
+@media (min-height: 641px) {
+  .header-in-sidebar .topbar__icon {
+    font-size: 18px;
   }
 }
 
@@ -896,6 +1029,13 @@ td:nth-child(4) {
   color: #ffffff;
 }
 
+@media (max-width: 767px) {
+  table.links-table tbody tr td:nth-child(3),
+  td:nth-child(4) {
+    color: #a6a6a6;
+  }
+}
+
 td {
   color: #a6a6a6;
   border-bottom: 1px solid #a6a6a6;
@@ -931,6 +1071,90 @@ table.links-table tbody tr:hover .icon-trash {
 .add-btn {
   height: 90px;
   padding: 27px;
+}
+
+/* Article - Personal data */
+.personal-data-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+form.personal-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+}
+
+.personal-name,
+.personal-comunicator,
+.personal-wallet,
+.personal-pass {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-bottom: 1px solid #a6a6a6;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.personal-name div,
+.personal-comunicator div,
+.personal-wallet div,
+.personal-pass div {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .personal-name div,
+  .personal-comunicator div,
+  .personal-wallet div,
+  .personal-pass div {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+.personal-name div label,
+.personal-comunicator div label,
+.personal-wallet div label,
+.personal-pass div label {
+  width: 140px;
+  margin-right: 20px;
+}
+
+.personal-form input,
+.personal-form label {
+  margin: 10px 0;
+  height: 40px;
+  line-height: 40px;
+  color: #a6a6a6;
+}
+
+@media (max-width: 767px) {
+  .personal-form input,
+  .personal-form label {
+    margin: 0;
+  }
+}
+
+.personal-form input {
+  border: 1px solid #a6a6a6;
+}
+
+.personal-form input {
+  width: 310px;
+}
+
+.personal-form input:focus {
+  color: #333333;
 }
 
 /* Pages / Views *

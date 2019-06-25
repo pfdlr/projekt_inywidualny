@@ -42,6 +42,10 @@ select {
     margin: 10px auto;
   }
 }
+.selects-1 div label,
+.selects-2 div label{
+  margin: 0 0 10px 0;
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"],

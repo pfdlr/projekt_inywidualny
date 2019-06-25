@@ -277,11 +277,11 @@ form.personal-form {
     margin: 0;
   }
 }
+
 .personal-form input {
   border: 1px solid $grey_font;
-}
-.personal-form input {
   width: 310px;
+  
   &:focus {
     color: $grey_dark;
   }

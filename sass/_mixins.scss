@@ -44,6 +44,14 @@
     float: left;
   }
 }
+@mixin btn ($bg, $color, $x, $y, $radius) {
+  background-color: $bg;
+  color: $color;
+  width: $x;
+  height: $y;
+  border-radius: $radius;
+  @include v-center();
+}
 //* breke points */
 @mixin small {
   @media (max-width: 767px) {

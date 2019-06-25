@@ -1,0 +1,161 @@
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: $white;
+  border: 1px solid $grey_font;
+  padding: 5px 30px 5px 10px;
+  font-size: 14px;
+  display: block;
+  border-radius: 0;
+  height: 40px;
+  background-image: url(/images/arrow-down-small.svg);
+  background-repeat: no-repeat;
+  background-size: 15px auto;
+  background-position: right 5px center;
+  text-align: left;
+  color: $grey_font;
+  &:focus {
+    color: $grey_dark;
+  }
+
+}
+.selects-1,
+.selects-2,
+.selects-3,
+.bottom-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  @include small {
+    flex-direction: column;
+  }
+}
+.selects-1 div,
+.selects-2 div {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  @include small {
+    margin: 10px auto;
+  }
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  margin: 0;
+  height: 40px;
+  padding: 5px 30px 5px 10px;
+  font-size: 14px;
+  line-height: 40px;
+  color: $grey_font;
+  border: 1px solid $grey_font;
+  &:focus {
+    color: $grey_dark;
+  }
+}
+ 
+
+.scheme,
+.compain {
+  width: 40%;
+  @include small {
+    width: 90%
+  }
+}
+.lang {
+  width: 16%;
+  @include small {
+    width: 50%;
+  }
+}
+.w-h,
+.design,
+.file {
+  width: 32%;
+  @include small {
+    width: 90%;
+  }
+}
+
+.selects-3-left,
+.selects-3-right {
+  width: 48%;
+  margin: 0;
+  @include small {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 300px;
+}
+
+fieldset div {
+  display: flex;
+  margin: 0;
+}
+fieldset div label {
+  line-height: 24px;
+  margin: 0 0 0 10px;
+  height: 40px;
+  color: $grey_font;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+  position: relative;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  z-index: 1;
+
+  + .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $grey_dark;
+    position: relative;
+    left: -22px;
+  }
+
+  &:checked + .icon {
+    background-color: $green_online;
+    border: 0;
+    background-image: url(/images/check.svg);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position-x: 60%;
+  }
+}
+.bottom-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @include small {
+    flex-direction: column;
+  }
+}
+.ok-btn {
+  position: static;
+  transform: translate(0, 0);
+  width: 11%;
+  @include small {
+    margin: 10px auto;
+    width: 35%;
+  }
+}
+form.tooltip div {
+  margin: 0;
+  width: 100%;
+}
+form.tooltip div input {
+  width: 98%;
+}

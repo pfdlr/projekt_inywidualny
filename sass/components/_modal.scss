@@ -28,6 +28,11 @@
   position: relative;
   padding: 30px;
   display: none;
+  @include small {
+    overflow: scroll;
+    width: 100%;
+    height: 90%;
+  }
 }
 .modal.show {
   display: block;
@@ -47,32 +52,4 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-.selects-1,
-.selects-2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-.selects-2 {
-  margin-top: 0;
-}
-.selects-1 div,
-.selects-2 div {
-  display: flex;
-  flex-direction: column;
-}
-[class*="selects-"] label,
-[class*="selects-"] input {
-  margin: 0;
-  height: 40px;
-  line-height: 40px;
-  color: $grey_font;
-  &:focus {
-    color: $grey_dark;
-  }
-}
-[class*="selects-"] label {
-  font-weight: bold;
 }

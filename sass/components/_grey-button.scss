@@ -1,0 +1,21 @@
+.grey-btn {
+  width: 126px;
+  height: 40px;
+  border: 0;
+  background-color: $grey_disable_button;
+  @include border-radius(2px);
+  color: $white;
+  cursor: pointer;
+  @include small {
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: darken($grey_disable_button, 25%);
+  }
+}
+.grey-btn span.icon.icon-links {
+  margin-right: 5px;
+  @include small {
+    display: none;
+  }
+}

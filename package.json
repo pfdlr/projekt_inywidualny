@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:html",
-    "test:html": "globstar nu-html-checker *.html",
+    "test:html": "globstar nu-html-checker *.html docs/*html",
     "init-project": "yarn install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",

@@ -18,7 +18,6 @@ select {
   &:focus {
     color: $grey_dark;
   }
-
 }
 .selects-1,
 .selects-2,
@@ -43,7 +42,7 @@ select {
   }
 }
 .selects-1 div label,
-.selects-2 div label{
+.selects-2 div label {
   margin: 0 0 10px 0;
 }
 input[type="text"],
@@ -61,13 +60,12 @@ input[type="password"] {
     color: $grey_dark;
   }
 }
- 
 
 .scheme,
 .compain {
   width: 40%;
   @include small {
-    width: 90%
+    width: 90%;
   }
 }
 .lang {
@@ -129,7 +127,6 @@ input[type="checkbox"] {
     position: relative;
     left: -22px;
   }
-
   &:checked + .icon {
     background-color: $green_online;
     border: 0;

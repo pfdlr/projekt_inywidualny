@@ -41,6 +41,7 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "imagemin-cli": "^4.0.1"
+    "imagemin-cli": "^4.0.1",
+    "lodash": "^4.17.13"
   }
 }

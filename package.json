@@ -10,21 +10,18 @@
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-      
-    
     "build": "npm-run-all build:* test",
     "build:clean": "rimraf docs sass/*.css css/*.map",
     "build:sass": "node-sass --output-style compressed -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "build:image": "imagemin images/* --out-dir=images",
-      "build:docs" : "mkdirp docs",
-      "build:copy" :"cp -t docs/ index.html",
-      "build:copy-css" :"cp -r css/ docs/",
-      "build:copy-js" :"cp -r js/ docs/",
-      "build:copy-images" :"cp -r images/ docs/",
-      "build:copy-fonts" :"cp -r fonts/ docs/",
-    
+    "build:docs": "mkdirp docs",
+    "build:copy": "cp -t docs/ index.html",
+    "build:copy-css": "cp -r css/ docs/",
+    "build:copy-js": "cp -r js/ docs/",
+    "build:copy-images": "cp -r images/ docs/",
+    "build:copy-fonts": "cp -r fonts/ docs/",
     "watch": "npm-run-all -p watch:*",
     "watch:browsersync": "browser-sync start --server --files 'css/*.css, *.html'",
     "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all build-dev:sass build:autoprefixer"

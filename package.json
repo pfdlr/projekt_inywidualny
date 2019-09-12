@@ -41,6 +41,7 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
+    "extend": "^2.0.2",
     "imagemin-cli": "^4.0.1",
     "lodash": "^4.17.13",
     "superagent": "^3.7.0"
